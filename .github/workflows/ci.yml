@@ -1,4 +1,4 @@
-﻿name: CI
+name: CI
 
 on:
   push:
@@ -29,6 +29,8 @@ jobs:
         run: mypy src
 
       - name: Test (pytest + coverage)
+      env:
+        PYTHONPATH: src
         run: pytest
 
       - name: Upload coverage report
