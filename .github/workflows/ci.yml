@@ -1,4 +1,4 @@
-name: CI
+﻿name: CI
 
 on:
   push:
@@ -21,6 +21,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+          pip install -e .
 
       - name: Lint (flake8)
         run: flake8 .
@@ -29,8 +30,8 @@ jobs:
         run: mypy src
 
       - name: Test (pytest + coverage)
-      env:
-        PYTHONPATH: src
+        env:
+          PYTHONPATH: src
         run: pytest
 
       - name: Upload coverage report
