@@ -1,1 +1,3 @@
 ﻿## SynthTradeEA
+
+Ruleset final check.
