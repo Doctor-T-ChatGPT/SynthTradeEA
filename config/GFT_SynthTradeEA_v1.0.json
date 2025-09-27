@@ -1,0 +1,36 @@
+{
+  "timeframe_weights": {
+    "M15": 0.25,
+    "H1": 0.2,
+    "H4": 0.3,
+    "D1": 0.25
+  },
+  "churn_scale_factor": 0.62,
+  "static_churn_risk": {
+    "H4": 0.012,
+    "D1": 0.013
+  },
+  "monthly_cost_drag_pct": 0.7,
+  "risk_map": {
+    "8.0": {
+      "risk_pct": 0.002,
+      "dsl_pct": 0.03
+    },
+    "8.5": {
+      "risk_pct": 0.003,
+      "dsl_pct": 0.025
+    },
+    "9.0": {
+      "risk_pct": 0.004,
+      "dsl_pct": 0.02
+    },
+    "9.5": {
+      "risk_pct": 0.005,
+      "dsl_pct": 0.015
+    },
+    "10.0": {
+      "risk_pct": 0.006,
+      "dsl_pct": 0.01
+    }
+  }
+}
