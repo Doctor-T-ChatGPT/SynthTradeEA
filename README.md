@@ -1,1 +1,1 @@
-﻿## SynthTradeEA
+﻿## SynthTrader
